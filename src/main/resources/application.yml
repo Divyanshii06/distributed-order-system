@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/orderdb
+    username: order_user
+    password: securePassword
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        jdbc:
+          lob:
+            non_contextual_creation: true
+    show-sql: true
+
+# Optionally switch to MySQL by uncommenting and adjusting the values below
+# spring:
+#   datasource:
+#     url: jdbc:mysql://localhost:3306/orderdb?useSSL=false&serverTimezone=UTC
+#     username: order_user
+#     password: securePassword
+#     driver-class-name: com.mysql.cj.jdbc.Driver
