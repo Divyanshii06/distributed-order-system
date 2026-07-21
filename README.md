@@ -85,33 +85,7 @@ Uses **Docker** and **Docker Compose** to provide a consistent development and d
 
 ---
 
-## 📂 Project Architecture
 
-```text
-distributed-order-system/
-│
-├── order-service/
-│   ├── controller/
-│   ├── service/
-│   ├── repository/
-│   ├── model/
-│   └── config/
-│
-├── processing-service/
-│   ├── consumer/
-│   ├── service/
-│   ├── repository/
-│   └── model/
-│
-├── docker-compose.yml
-├── pom.xml
-├── .env
-└── README.md
-```
-
-> The exact directory structure may vary depending on how the services are organized in the implementation.
-
----
 
 ## 🔄 Order Processing Flow
 
